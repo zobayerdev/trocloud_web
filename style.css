@@ -1090,28 +1090,109 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
 
 /* ############################################################################ */
 /* my code */
-.pricing-content {
-    padding: 20px; /* Add padding around the entire content */
-    margin-left: 20px; /* Add margin to move the content away from the left edge */
+/* ############################################################################## */
+.pricing-table-area {
+    padding: 1px 0;
+}
+
+.single-pricing-table {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1px; /* Adjust padding if needed */
+    text-align: left;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.single-pricing-table.active {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2);
+}
+
+.pricing-amount {
+    margin-bottom: 20px;
 }
 
 .pricing-list {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 20px; /* Add padding to the left of the list */
-    margin: 0; /* Reset margin */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Ensure no overflow */
 }
 
 .pricing-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Space between items */
-    color: #333; /* Text color */
+    margin-left: 1px; /* Adjust margin if needed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Ensure no overflow */
+    text-overflow: ellipsis; /* Handle overflowed text */
 }
 
 .pricing-list li i {
-    color: green; /* Icon color */
-    margin-right: 10px; /* Space between icon and text */
+    color: #28a745;
+    /* margin-right: 10px; */
 }
+
+.pricing-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive layout for columns */
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 991px) {
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* ################################################## */
+.pricing-buttons-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    padding: 0 10px; /* Add padding to create space on left and right */
+}
+
+.pricing-buttons {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+}
+
+.pricing-btn {
+    padding: 10px 20px;
+    border: 1px solid #007bff; /* Border color */
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Button background color */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-flex; /* Ensure text alignment within button */
+    align-items: center; /* Vertically center text */
+}
+
+.pricing-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
 
 /*********** SLIDER STYLE*********/
 
