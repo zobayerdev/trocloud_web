@@ -1088,6 +1088,30 @@ a.pricing-btn.blue-btn.homepage-one-all-features-btn.action-btn.slider-links-2 {
     margin-top: 50px;
 }
 
+/* ############################################################################ */
+/* my code */
+.pricing-content {
+    padding: 20px; /* Add padding around the entire content */
+    margin-left: 20px; /* Add margin to move the content away from the left edge */
+}
+
+.pricing-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 20px; /* Add padding to the left of the list */
+    margin: 0; /* Reset margin */
+}
+
+.pricing-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between items */
+    color: #333; /* Text color */
+}
+
+.pricing-list li i {
+    color: green; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+}
 
 /*********** SLIDER STYLE*********/
 
