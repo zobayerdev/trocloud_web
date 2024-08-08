@@ -143,7 +143,7 @@
                    position: map.getCenter(),
                    icon: 'asset/img/icons/map-marker-icon.png',
                    map: map,
-                   title: '28 Green Tower, Street Name, New York City, USA'
+                   title: 'House:31/1, Level-05, Govt Primary School Road, Islampur, Dattapara, Tongi, Gazipur-1710, Bangladesh'
                });
                infowindow.open(map, marker);
 
